@@ -28,6 +28,8 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
+@import "~@coreui/coreui-pro/scss/coreui";
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* 
 ---------------------------------------------
@@ -193,7 +195,8 @@ body {
 }
 
 .section-heading h2 span {
-  color: #fe3f40;
+  color: rgb(37, 150, 190);
+  /* #fe3f40; */
 }
 
 .main-blue-button a {
@@ -210,7 +213,7 @@ body {
 
 .main-red-button a {
   display: inline-block;
-  background-color: #fe3f40;
+  background-color: #5ff300;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -225,7 +228,7 @@ body {
   background-color: #fff;
   font-size: 15px;
   font-weight: 400;
-  color: #fe3f40;
+  color: #5ff300;
   text-transform: capitalize;
   padding: 12px 25px;
   border-radius: 23px;
@@ -254,11 +257,11 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #fe3f40!important;
+  color: #5ff300!important;
 }
 
 .background-header .nav li a.active {
-  color: #fe3f40!important;
+  color: #5ff300!important;
 }
 
 .header-area {
@@ -308,7 +311,7 @@ header
 }
 
 .logo h4 span {
-  color: #fe3f40;
+  color: #5ff300;
 }
 
 .background-header .main-nav .logo h4 {
@@ -376,12 +379,12 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fe3f40!important;
+  color: #5ff300!important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fe3f40!important;
+  color: #5ff300!important;
   opacity: 1;
 }
 
@@ -448,7 +451,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
-  color: #fe3f40!important;
+  color: #5ff300!important;
   padding-left: 25px;
 }
 
@@ -588,7 +591,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #fe3f40;
+  color: #5ff300;
 }
 
 @media (max-width: 1200px) {
@@ -621,7 +624,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #fe3f40!important;
+    color: #5ff300!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -682,7 +685,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #fe3f40!important;
+    color: #5ff300!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -796,7 +799,7 @@ preloader
     height: 16px;
     top: 12px;
     left: 15px;
-    background: #fe3f40;
+    background: #5ff300;
     border-radius: 50%;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -819,7 +822,7 @@ preloader
     width: 16px;
     height: 16px;
     margin-left: 16px;
-    background: #fe3f40;
+    background: #5ff300;
     border-radius: 50%;
 }
 
@@ -842,7 +845,8 @@ Banner Style
 
 .main-banner:after {
   content: '';
-  background-image: url(../images/baner-dec-left.png);
+  /* background-image: url(../images/baner-dec-left.png); */
+  background-color: #2a3b46;
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -853,7 +857,7 @@ Banner Style
 
 .main-banner:before {
   content: '';
-  background-image: url(../images/baner-dec-right.png);
+  /* background-image: url(../images/baner-dec-right.png); */
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -869,7 +873,7 @@ Banner Style
 .main-banner .left-content h6 {
   text-transform: uppercase;
   font-size: 18px;
-  color: #fe3f40;
+  color: #5ff300;
   margin-bottom: 15px;
 }
 
@@ -886,7 +890,7 @@ Banner Style
 }
 
 .main-banner .left-content h2 span {
-  color: #fe3f40;
+  color: #5ff300;
 }
 
 .main-banner .left-content p {
@@ -908,7 +912,7 @@ Banner Style
   background-color: #fff;
   font-size: 15px;
   font-weight: 500;
-  color: #fe3f40;
+  color: #5ff300;
   text-transform: capitalize;
   padding: 12px 25px;
   border-radius: 23px;
@@ -948,7 +952,9 @@ About Us Style
 }
 
 .about-us {
-  background-image: url(../images/about-bg.png);
+  /* background-image: url(../images/about-bg.png); */
+  /* background-color: #6389a0; */
+
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1051,8 +1057,8 @@ Services Style
 }
 
 .our-services .progress-skill-bar .filled-bar {
-  background: rgb(255,77,30);
-  background: linear-gradient(105deg, rgba(255,77,30,1) 0%, rgba(255,44,109,1) 100%);
+  background:black;
+  background: linear-gradient(105deg,black 0%, black 100%);
   height: 6px;
   border-radius: 3px;
   margin-bottom: -6px;
@@ -1107,8 +1113,8 @@ Portfolio
 }
 
 .our-portfolio .hidden-content {
-  background: rgb(255,77,30);
-  background: linear-gradient(105deg, rgba(255,77,30,1) 0%, rgba(255,44,109,1) 100%);
+  background: black;
+  background: linear-gradient(105deg, black 0%, black 100%);
   padding: 30px;
   border-radius: 20px;
   text-align: center;
@@ -1124,7 +1130,7 @@ Portfolio
   width: 20px;
   height: 20px;
   position: absolute;
-  background: rgb(255,77,30);
+  background: black;
   content: '';
   left: 50%;
   bottom: -8px;
@@ -1223,7 +1229,7 @@ Blog
 }
 
 .our-blog .left-image ul li i {
-  color: #ff4d61;
+  color: #5ff300;
   font-size: 16px;
   margin-right: 8px;
 }
@@ -1262,7 +1268,7 @@ Blog
 }
 
 .our-blog .right-list .left-content span i {
-  color: #ff4d61;
+  color: #5ff300;
   font-size: 16px;
   margin-right: 8px;
 }
@@ -1288,8 +1294,10 @@ contact
 */
 
 .contact-us {
-  padding: 160px 0px;
-  background-image: url(../images/contact-bg.png);
+  padding: 50px 0px;
+  /* background-image: url(../images/contact-bg.png); */
+  background-color:#eee;
+
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1298,11 +1306,11 @@ contact
 .contact-us .section-heading h2,
 .contact-us .section-heading h2 em,
 .contact-us .section-heading h2 span {
-  color: #fff;
+  color:  #03a4ed;
 }
 
 .contact-us .section-heading p {
-  color: #fff;
+  color: rgb(68, 67, 67);
   margin-top: 30px;
 }
 
@@ -1313,7 +1321,7 @@ contact
 .phone-info h4 {
   font-size: 20px;
   font-weight: 700;
-  color: #fff;
+  color:rgb(68, 67, 67);
 }
 
 .phone-info h4 span i {
@@ -1322,16 +1330,16 @@ contact
   display: inline-block;
   text-align: center;
   line-height: 46px;
-  background-color: #fff;
+  background-color: rgba(204, 204, 204, 0.87);
   border-radius: 50%;
-  color: #ff3b2c;
+  color: rgb(37, 37, 37);
   font-size: 22px;
   margin-left: 30px;
   margin-right: 15px;
 }
 
 .phone-info h4 span a {
-  color: #fff;
+  color: black;
   font-size: 15px;
   font-weight: 400;
 }
@@ -1358,7 +1366,7 @@ form#contact input {
   width: 100%;
   height: 46px;
   border-radius: 33px;
-  background-color: #d1f3ff;
+  background-color: #b9e2f5;
   border: none;
   outline: none;
   font-size: 15px;
@@ -1380,7 +1388,7 @@ form#contact textarea {
   min-height: 140px;
   height: 140px;
   border-radius: 20px;
-  background-color: #d1f3ff;
+  background-color: #b9e2f5;
   border: none;
   outline: none;
   font-size: 15px;
@@ -1396,7 +1404,7 @@ form#contact textarea::placeholder {
 
 form#contact button {
   display: inline-block;
-  background-color: #03a4ed;
+  background-color: #b5ff86;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -1410,7 +1418,7 @@ form#contact button {
 }
 
 form#contact button:hover {
-  background-color: #fe3f40;
+  background-color: #5ff300;
 }
 
 
@@ -1426,7 +1434,7 @@ footer p {
 }
 
 footer p a {
-  color: #fe3f40;
+  color: black;
 }
 
 /* 
@@ -1476,7 +1484,7 @@ responsive
     text-align: center;
   }
   .about-us .services .item  {
-    background: rgb(255,77,30);
+    background: black;
     background: linear-gradient(105deg, rgba(255,77,30,1) 0%, rgba(255,44,109,1) 100%);
     padding: 30px;
     border-radius: 20px;
